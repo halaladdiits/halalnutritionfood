@@ -1,0 +1,125 @@
+@import "variable-overrides";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '../../../node_modules/font-awesome/scss/font-awesome';
+@import "../../../node_modules/select2/src/scss/core";
+// @import "../../../node_modules/select2-bootstrap-css/lib/select2-bootstrap";
+@import "../../../node_modules/select2-bootstrap-theme/src/select2-bootstrap";
+
+/**
+ * Frontend Styles Start Here
+ */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-top: 20px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  margin-left: 0;;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.navbar {
+  margin:0;
+  position: relative;
+}
+
+.facebook{
+  background-color: #4863ae;
+  border-color: #4863ae;
+}
+.facebook:hover{
+  background-color: #2871aa;
+  border-color: #2871aa;
+}
+.twitter{
+  background-color: #46c0fb;
+  border-color: #46c0fb;
+}
+.twitter:hover{
+  background-color: #00c7fb;
+  border-color: #00c7fb;
+}
+.google{
+  background-color: #DD5044;
+  border-color: #DD5044;
+}
+.google:hover{
+  background-color: #FF5D4E;
+  border-color:#FF5D4E;
+}
+
+//Passive
+.with-nav-pills.panel-primary .nav-pills > li > a,
+.with-nav-pills.panel-primary .nav-pills > li > a:hover,
+.with-nav-pills.panel-primary .nav-pills > li > a:focus {
+  color: $gray-lighter;
+}
+//Hover
+.with-nav-pills.panel-primary .nav-pills > .open > a,
+.with-nav-pills.panel-primary .nav-pills > .open > a:hover,
+.with-nav-pills.panel-primary .nav-pills > .open > a:focus,
+.with-nav-pills.panel-primary .nav-pills > li > a:hover,
+.with-nav-pills.panel-primary .nav-pills > li > a:focus {
+  color: $gray-lighter;
+  background-color: $gray-darker;
+  border-color: transparent;
+}
+//Active
+.with-nav-pills.panel-primary .nav-pills > li.active > a,
+.with-nav-pills.panel-primary .nav-pills > li.active > a:hover,
+.with-nav-pills.panel-primary .nav-pills > li.active > a:focus {
+  color: $gray-darker;
+  background-color: $gray-lighter;
+  border-color: transparent;
+}
+
+ul.pagination li a {
+  align-content: center;
+}
+
+.col-md-12 > .alert {
+  margin-top: 20px;
+}
+
+.action > button {
+  margin-right: 5px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+
+@import "entahlah";

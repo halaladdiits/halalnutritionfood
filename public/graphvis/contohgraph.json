@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {"id":1,"name":"mie ayam","group":1},
+	{"id":2,"name":"nasi bumbu","group":1},
+	{"id":3,"name":"ayam bumbu","group":1},
+	{"id":4,"name":"ayam","group":2},
+	{"id":5,"name":"nasi","group":2},
+	{"id":6,"name":"bumbu","group":2},
+	{"id":7,"name":"mie","group":2}
+  ],
+  "links": [
+    {"source":1, "target":7, "value":1},
+    {"source":1, "target":4, "value":1},
+    {"source":2, "target":5, "value":1},
+    {"source":2, "target":6, "value":1},
+    {"source":3, "target":4, "value":1},
+    {"source":3, "target":6, "value":1}
+  ]
+}

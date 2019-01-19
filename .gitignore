@@ -1,0 +1,47 @@
+halalnutritionfood.sql
+.gitold
+.idea/
+/node_modules
+/vendor
+.env
+/public/resources.ttl
+/public/resources
+/public/build
+/public/index_old4
+/public/codiad
+/public/convert.php
+/public/malaysia.json
+/public/resources
+/public/resources_b30April2018
+/public/resources_b4mei2018
+/public/resources backup juni 2018
+/public/resources backup juni 23 2018
+/public/resources_jaga2
+/public/resourcesnew.tar
+/public/Halalv1.jar
+/public/resources_old2
+/public/Halalv2.jar
+/public/resources_old2.ttl
+/public/Halalv3.jar
+/public/resources_old3
+/public/halalvb.ttl
+/public/resources_old4
+/public/resources_oldd.ttl
+/public/resources.tar.gz
+/public/resources.tar.gz.bak
+/public/index_b28april2018
+/public/index_b4mei2018
+/public/index_jaga2
+/public/search.php
+/public/index juni 2018
+/public/indexold
+/public/solrdelete.php
+/public/index_old
+/public/test.php
+/public/index_old2
+/public/v.2.8.4.tar.gz
+/public/index_old3
+/public/vendor
+/java
+fusekiPut.sh
+newcron.txt

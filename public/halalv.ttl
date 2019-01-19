@@ -1,0 +1,71 @@
+@prefix food: <http://purl.org/foodontology/> .
+@prefix foodlirmm: <http://data.lirmm.fr/ontologies/food#> .
+@prefix gr: <http://purl.org/goodrelations/> .
+@prefix halalv: <http://halal.addi.is.its.ac.id/halalv.ttl#> .
+@prefix halalf: <http://halal.addi.is.its.ac.id/foodproduct/> .
+@prefix halali: <http://halal.addi.is.its.ac.id/ingredient/> .
+@prefix halalc: <http://halal.addi.is.its.ac.id/certificate/> .
+@prefix halals: <http://halal.addi.is.its.ac.id/source/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+halalv:FoodProduct a rdfs:Class, owl:Class;
+    rdfs:label "A manufactured food product";
+    rdfs:subClassOf foodlirmm:FoodProduct, food:Food .
+    
+halalv:Ingredient a rdfs:Class, owl:Class;
+    rdfs:label "An ingredient : a certain quantity of food that is part of another food";
+    rdfs:subClassOf foodlirmm:Ingredient, food:Food .
+
+halalv:FoodAdditive a rdfs:Class, owl:Class;
+    rdfs:label "Food Additive Enumber of Ingredient - Code given to additives that are used for food and beverage products.";
+    rdfs:subClassOf halalv:Ingredient .
+    
+halalv:Sources a rdfs:Class, owl:Class;
+    rdfs:label "Source that conclude E-Number ingredient status." .
+    
+halalv:HalalCertificate a rdfs:Class, owl:Class;
+    rdfs:label "Halal Certificate that given to manufacuter." .    
+
+halalv:certificate a rdf:Property;
+    rdfs:label "A FoodProduct certificate";
+    rdfs:domain halalv:FoodProduct; 
+    rdfs:range halalv:HalalCertificate .
+
+halalv:halalSource a rdf:Property;
+    rdfs:label "Describe that a food/beverage/ENumbers/food ingedient are allowed to be consumed in Islamic religious.";
+    rdfs:domain halalv:Ingridient;
+    rdfs:range halalv:Sources, halalv:Status .
+
+halalv:Estatus a rdf:Property;
+    rdfs:label "A description of the food/beverage/ENumbers/food ingedient status to be consumed in Islamic religious";
+    rdfs:domain rdfs:Resource;
+    rdfs:range halalv:halal, halalv:mushbooh, halalv:haram .
+    
+halalv:OrgSource a rdf:Property;
+    rdfs:label "An organization.";
+    rdfs:domain halalv:Sources;
+    rdfs:range halalv:Sources .    
+
+halalv:halalCode a rdf:Property;
+    rdfs:label "Halal certificate number.";
+    rdfs:domain halalv:HalalCertificate;
+    rdfs:range xsd:string .    
+    
+halalv:halalExp a rdf:Property;
+    rdfs:label "Halal certificate expire date.";
+    rdfs:domain halalv:HalalCertificate;
+    rdfs:range xsd:date .    
+    
+halalv:halalStatus a rdf:Property;
+    rdfs:label "Halal certificate status.";
+    rdfs:domain halalv:HalalCertificate .
+    
+halalv:OrgCert a rdf:Property;
+    rdfs:label "Organizations that issue halal certificates.";
+    rdfs:domain halalv:HalalCertificate;
+    rdfs:range halalv:Sources .        
